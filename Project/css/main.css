@@ -1,0 +1,102 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: lightgrey;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.logo {
+	width: 20%;
+}
+
+.logo img {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+.menu-ctn > li{
+	display: inline-block;
+	background-color: white;
+	padding: 10px 15px;
+	position: relative;
+}
+
+.menu-ctn li:hover{
+	cursor: pointer;
+	background-color: lightblue;
+}
+
+#ddUnitMenu{
+	display: none;
+	position: absolute;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+	text-align: center;
+	left: 0;
+	top: 100%;
+}
+
+#ddUnitMenu li{
+	padding: 10px 15px;
+}
+
+#ddUnitMenu.active{
+	
+	display: block;
+}
+
+#ddTransMenu{
+	display: none;
+	position: absolute;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+	text-align: center;
+	left: 0;
+	top: 100%;
+}
+
+#ddTransMenu li{
+	padding: 10px 15px;
+}
+
+#ddTransMenu.active{
+	
+	display: block;
+}
+
+#ddUrgMenu{
+	display: none;
+	position: absolute;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+	text-align: center;
+	left: 0;
+	top: 100%;
+}
+
+#ddUrgMenu li{
+	padding: 10px 15px;
+}
+
+#ddUrgMenu.active{
+	
+	display: block;
+}
+
+	
