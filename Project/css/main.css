@@ -30,8 +30,10 @@ ul {
 .menu-ctn > li{
 	display: inline-block;
 	background-color: white;
-	padding: 10px 15px;
+	padding: 10px 20px;
 	position: relative;
+	display: center;
+	
 }
 
 .menu-ctn li:hover{
@@ -46,7 +48,6 @@ ul {
 	background-color: white;
 	z-index: 1;
 	text-align: center;
-	left: 0;
 	top: 100%;
 }
 
@@ -66,7 +67,6 @@ ul {
 	background-color: white;
 	z-index: 1;
 	text-align: center;
-	left: 0;
 	top: 100%;
 }
 
@@ -86,7 +86,6 @@ ul {
 	background-color: white;
 	z-index: 1;
 	text-align: center;
-	left: 0;
 	top: 100%;
 }
 
@@ -99,4 +98,25 @@ ul {
 	display: block;
 }
 
+#textareaInput{
+	position: relative;
+	right: 110px;
+	resize: none;
+	font-size: 18px;
+	padding: 8px 10px;
+}
+
+#textareaOutput{
+	position: relative;
+	right: 160px;
+	resize: none;
+	font-size: 18px;
+	padding: 8px 10px;
+}
+
+#calcButton{
+	position:relative;
+	right: 425px;
+	padding: 10px 10px;
+}
 	
