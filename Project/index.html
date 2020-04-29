@@ -12,42 +12,35 @@
 	<nav>
 		<div class="logo">
 			<img src="image.png" alt="">
-		</div>
-		
-		<ul class="menu-ctn">
-			<li id="unitMenu">
-				Base Units
-				<ul id="ddUnitMenu">
-					<li>Units</li>
-					<li>Hours</li>
-				</ul>
-			</li>
-			
-			<li id="transMenu">
-				Translator level
-				<ul id="ddTransMenu">
-					<li>Associate</li>
-					<li>Senior Associate</li>
-					<li>Naomi</li>
-				</ul>
-			</li>
-			
-			<li id="urgMenu">
-				Urgancy
-				<ul id="ddUrgMenu">
-					<li>Non-Urgent</li>
-					<li>Semi-Urgent</li>
-					<li>Urgent</li>
-					<li>Panic</li>
-				</ul>
-		</li>
-		</ul>
-		
-		<textarea style="overflow:hidden" id="textareaInput" rows="1" cols="5"></textarea>
-		<textarea style="overflow:hidden" id="textareaOutput" rows="1" cols="5"></textarea>
-		<button id="calcButton">Calc</button>
+		</div>	
 	</nav>
 	
+	<label for="baseUnits">Base Units:</label>
+	<select id="chosenunit">	
+		<option>Units</option>
+		<option>Hours</option>
+	</select>
+	
+	<label for="transLevel">Translator:</label>
+	<select id="chosentrans">	
+		<option>Associate</option>
+		<option>Senior</option>
+		<option>Naomi</option>
+	</select>
+	
+	<label for="urgLevel">Urgancy:</label>
+	<select id="chosenurg">	
+		<option>Non-Urgant</option>
+		<option>Semi-Urgant</option>
+		<option>Urgant</option>
+		<option>Panic</option>
+	</select>
+	
+	<textarea style="overflow:hidden" id="taIn" rows="1" cols="5"></textarea>
+	<button id="buttonCalc">Calc</button>
+	<textarea style="overflow:hidden" id="taOut" rows="1" cols="5"></textarea>
+	<button id="buttonPlus">+</>
+		
 	<script src="js/main.js"></script>
 </body>
 <html>
