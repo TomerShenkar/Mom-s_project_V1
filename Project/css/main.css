@@ -5,7 +5,7 @@
 }
 
 nav {
-	background-color: lightgrey;
+	background-color:;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -17,6 +17,8 @@ nav {
 
 .logo {
 	width: 20%;
+	position: relative;
+	left: 500px;
 }
 
 .logo img {

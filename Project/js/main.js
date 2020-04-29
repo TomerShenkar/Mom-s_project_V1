@@ -10,16 +10,23 @@ function calcuFun(){
 	var urgselection = document.getElementById("chosenurg").value;
 	var taInput = document.getElementById("taIn").value;
 	
+	var isnum = /^\d+$/.test(taInput);
+	//console.log(isnum);
+	if(isnum===false){
+		console.log("Breaked at isnum");
+		document.getElementById("taOut").value = "Not happening";
+	}
+	
 	if(unitselection==="Units"){
 		if(transselection==="Associate"){
-			if(urgselection==="Non-Urgant"){
+			if(urgselection==="Non-Urgent"){
 				document.getElementById("taOut").value = taInput*132;
 			}
-			if(urgselection==="Semi-Urgant"){
+			if(urgselection==="Semi-Urgent"){
 				document.getElementById("taOut").value = taInput*154;
 
 			}
-			if(urgselection==="Urgant"){
+			if(urgselection==="Urgent"){
 				document.getElementById("taOut").value = taInput*179;
 
 			}
@@ -28,27 +35,27 @@ function calcuFun(){
 			}
 		}
 		if(transselection==="Senior"){
-			if(urgselection==="Non-Urgant"){
+			if(urgselection==="Non-Urgent"){
 				document.getElementById("taOut").value = taInput*154;
 			}
-			if(urgselection==="Semi-Urgant"){
+			if(urgselection==="Semi-Urgent"){
 				document.getElementById("taOut").value = taInput*176;
 			}
-			if(urgselection==="Urgant"){
+			if(urgselection==="Urgent"){
 				document.getElementById("taOut").value = taInput*198;
 			}
 			if(urgselection==="Panic"){
 				document.getElementById("taOut").value = taInput*248;
 			}
 		}
-		else{
-			if(urgselection==="Non-Urgant"){
+		else if(transselection==="Naomi"){
+			if(urgselection==="Non-Urgent"){
 				document.getElementById("taOut").value = taInput*176;
 			}
-			if(urgselection==="Semi-Urgant"){
+			if(urgselection==="Semi-Urgent"){
 				document.getElementById("taOut").value = taInput*19;
 			}
-			if(urgselection==="Urgant"){
+			if(urgselection==="Urgent"){
 				document.getElementById("taOut").value = taInput*220;
 			}
 			if(urgselection==="Panic"){
@@ -59,13 +66,13 @@ function calcuFun(){
 	
 	else{
 		if(transselection==="Associate"){
-			if(urgselection==="Non-Urgant"){
+			if(urgselection==="Non-Urgent"){
 				document.getElementById("taOut").value = taInput*308;
 			}
-			if(urgselection==="Semi-Urgant"){
+			if(urgselection==="Semi-Urgent"){
 				document.getElementById("taOut").value = taInput*352;
 			}
-			if(urgselection==="Urgant"){
+			if(urgselection==="Urgent"){
 				document.getElementById("taOut").value = taInput*396;
 			}
 			if(urgselection==="Panic"){
@@ -74,13 +81,13 @@ function calcuFun(){
 		}
 		
 		if(transselection==="Senior"){
-			if(urgselection==="Non-Urgant"){
+			if(urgselection==="Non-Urgent"){
 				document.getElementById("taOut").value = taInput*330;
 			}
-			if(urgselection==="Semi-Urgant"){
+			if(urgselection==="Semi-Urgent"){
 				document.getElementById("taOut").value = taInput*374;
 			}
-			if(urgselection==="Urgant"){
+			if(urgselection==="Urgent"){
 				document.getElementById("taOut").value = taInput*418;
 			}
 			if(urgselection==="Panic"){
@@ -88,14 +95,14 @@ function calcuFun(){
 			}
 		}
 		
-		else{
-			if(urgselection==="Non-Urgant"){
+		else if(transselection==="Naomi"){
+			if(urgselection==="Non-Urgent"){
 				document.getElementById("taOut").value = taInput*352;
 			}
-			if(urgselection==="Semi-Urgant"){
+			if(urgselection==="Semi-Urgent"){
 				document.getElementById("taOut").value = taInput*396;
 			}
-			if(urgselection==="Urgant"){
+			if(urgselection==="Urgent"){
 				document.getElementById("taOut").value = taInput*440;
 			}
 			if(urgselection==="Panic"){
